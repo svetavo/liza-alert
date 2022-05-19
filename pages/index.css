@@ -25,3 +25,20 @@
 @import url(../blocks/content/__divider/content__divider.css);
 @import url(../blocks/content/__show-result/content__show-result.css);
 @import url(../blocks/content/__invisible/content__invisible.css);
+@import url(../blocks/content/__text/content__text.css);
+
+@import url(../blocks/navigation/navigation.css);
+@import url(../blocks/navigation/__button/navigation__button.css);
+@import url(../blocks/button/button.css);
+@import url(../blocks/button/_disabled/button_disabled.css);
+@import url(../blocks/button/_orange/button_orange.css);
+@import url(../blocks/button/_white/button_white.css);
+@import url(../blocks/button/_result/button_result.css);
+
+@import url(../blocks/two-columns/two-columns.css);
+@import url(../blocks/two-columns/__left/two-columns__left.css);
+@import url(../blocks/two-columns/__right/two-columns__right.css);
+@import url(../blocks/two-columns/__row/two-columns__row.css);
+@import url(../blocks/two-columns/__icon/two-columns__icon.css);
+@import url(../blocks/two-columns/__icons/two-columns__icons.css);
+@import url(../blocks/two-columns/__text-area/two-columns__text-area.css);
