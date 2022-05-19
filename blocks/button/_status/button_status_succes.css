@@ -1,0 +1,6 @@
+.button_status_succes::before {
+  content: url(../../../images/reapeat_succes.svg);
+  margin-right: 10px;
+  height: 20px;
+  width: 20px;
+}

@@ -2,11 +2,11 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 32px;
   gap: 32px;
+  padding: 32px;
   background: #ffffff;
   box-shadow: 0px 0px 4px rgba(231, 232, 235, 0.6),
     0px 4px 16px rgba(231, 232, 235, 0.6);
   border-radius: 16px;
-  width: 872px;
+  max-width: 808px;
 }
