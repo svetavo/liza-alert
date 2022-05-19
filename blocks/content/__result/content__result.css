@@ -1,0 +1,9 @@
+.content__result {
+  width: 808px;
+  height: 206px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 24px;
+  margin: 32px 0;
+}
