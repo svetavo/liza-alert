@@ -1,13 +1,17 @@
 .button {
-    width: 184px;
-    height: 48px;
-    border-radius: 16px;
-    padding: 12px 24px;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 24px;
+  width: 184px;
+  height: 48px;
+  border-radius: 16px;
+  padding: 12px 24px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .button:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
+
