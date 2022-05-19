@@ -1,0 +1,8 @@
+.video {
+    width: 808px;
+    height: 456px;
+    border: none;
+    border-radius: 8px;
+    background: #212329;
+    box-shadow: 0px 0px 4px rgba(233, 234, 237, 0.6), 0px 4px 16px rgba(233, 234, 237, 0.4);
+}
