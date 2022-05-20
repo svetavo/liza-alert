@@ -10,27 +10,50 @@
   <link rel="stylesheet" href="./pages/index.css" />
 </head>
 
-<body class="page">
-  <header class="header">
-    <a class="header__link" target="_blank" href="#">Учебная платформа</a>
-    <nav class="menu">
-      <ul class="menu__list">
-        <li class="menu__list-item">
-          <a id="courses-page-link" class="menu__link menu__link_active" href="./index.html">
-            <img class="menu__icon" src="./images/logo_courses.svg" alt="Курсы" />Курсы
-          </a>
-        </li>
-        <li class="menu__list-item">
-          <a class="menu__link" href="./account.html">
-            <img class="menu__icon" src="./images/logo_profile.svg" alt="Профиль" />Профиль
-          </a>
-        </li>
-      </ul>
-    </nav>
-  </header>
-  <main class="main">
-    <section class="breadcrumb">Хлебные крошки</section>
-    <!-- Обёртка для того что бы флексануть колонки-->
+
+  <body class="page">
+    
+    <header class="header">
+      <a class="header__link" target="_blank" href="#">Учебная платформа</a>
+      <nav class="menu">
+        <ul class="menu__list">
+          <li class="menu__list-item">
+            <a
+              id="courses-page-link"
+              class="menu__link menu__link_active"
+              href="./index.html"
+            >
+              <img
+                class="menu__icon"
+                src="./images/logo_courses.svg"
+                alt="Курсы"
+              />Курсы
+            </a>
+          </li>
+          <li class="menu__list-item">
+            <a class="menu__link" href="./account.html">
+              <img
+                class="menu__icon"
+                src="./images/logo_profile.svg"
+                alt="Профиль"
+              />Профиль
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    
+    <main class="main">
+      
+      <section class="breadcrumb">
+        <ul class="breadcrumb-list">
+          <li class="breadcrumb-list__item"><a href="#" class="breadcrumb-list__link">Курсы</a></li>
+          <li class="breadcrumb-list__item"><a href="#" class="breadcrumb-list__link">Кинологическое направление</a></li>
+          <li class="breadcrumb-list__item"><a href="#" class="breadcrumb-list__link">5. Работа «второго номера» совместно со следовым кинологическим расчётом</a></li>
+          <li class="breadcrumb-list__item"><a href="#" class="breadcrumb-list__link breadcrumb-list__link_active">Курс завершён</a></li>
+        </ul>
+      </section>
+
     <div class="wrapper">
       <section class="container">
         <div class="content">
@@ -53,14 +76,39 @@
                 class="content__main-span">в других направлениях</span>.</p>
           </div>
       </section>
+        
       <section class="aside">
         <h2 class="aside__title">Содержание</h2>
         <div class="accordion">
-          <button class="accordion__button">
-            <h3 class="accordion__title">1. В каких случаях перспективно применение следовых кинологических расчётов
-            </h3>
-            <div class="accordion__icon-wrapper">
-              <img class="accordion__icon" src="./images/accordion_icon.svg">
+            <button class="accordion__button">
+              <h3 class="accordion__title">1. В каких случаях перспективно применение следовых кинологических расчётов</h3>
+              <div class="accordion__icon-wrapper">
+                <img class="accordion__icon" src="./images/accordion_icon.svg">
+              </div> 
+            </button>
+            <div class="accordion__body">
+              <ul class="accordion__list">
+                <li class="accordion__item">
+                  <img class="menu__icon" src="./images/success_icon.svg">
+                  <p class="accordion__text">Урок</p>
+                </li>
+                <li class="accordion__item">
+                  <img class="menu__icon" src="./images/success_icon.svg">
+                  <p class="accordion__text">Видео</p>
+                </li>
+                <li class="accordion__item">
+                  <img class="menu__icon" src="./images/success_icon.svg">
+                  <p class="accordion__text">Урок</p>
+                </li>
+                <li class="accordion__item">
+                  <img class="menu__icon" src="./images/success_icon.svg">
+                  <p class="accordion__text">Вебинар</p>
+                </li>
+                <li class="accordion__item">
+                  <img class="menu__icon" src="./images/success_icon.svg">
+                  <p class="accordion__text">Тест</p>
+                </li>
+              </ul>  
             </div>
           </button>
           <div class="accordion__body">
@@ -254,6 +302,7 @@
         </div>
       </section>
     </div>
+      
     <div class="navigation">
       <!-- Для того, чтобы сделать кнопку неактивной, нужно убрать модификатор цвета и добавить модификатор button_disabled -->
       <button type="button" class="button button_white navigation__button" aria-label="Назад">&larr;&nbsp;&nbsp;
