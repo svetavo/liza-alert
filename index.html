@@ -1,76 +1,74 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Curses web-page" />
-    <title>Видео</title>
-    <link rel="stylesheet" href="./pages/index.css" />
-  </head>
 
-  <body class="page">
-    <header class="header">
-      <a class="header__link" target="_blank" href="#">Учебная платформа</a>
-      <nav class="menu">
-        <ul class="menu__list">
-          <li class="menu__list-item">
-            <a
-              id="courses-page-link"
-              class="menu__link menu__link_active"
-              href="./index.html"
-            >
-              <img
-                class="menu__icon"
-                src="./images/logo_courses.svg"
-                alt="Курсы"
-              />Курсы
-            </a>
-          </li>
-          <li class="menu__list-item">
-            <a class="menu__link" href="./account.html">
-              <img
-                class="menu__icon"
-                src="./images/logo_profile.svg"
-                alt="Профиль"
-              />Профиль
-            </a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-    <main class="main">
-      <section class="breadcrumb">
-        <ul class="breadcrumb-list">
-          <li class="breadcrumb-list__item"><a href="#" class="breadcrumb-list__link">Курсы</a></li>
-          <li class="breadcrumb-list__item"><a href="#" class="breadcrumb-list__link">Кинологическое направление</a></li>
-          <li class="breadcrumb-list__item"><a href="#" class="breadcrumb-list__link">5. Работа «второго номера» совместно со следовым кинологическим расчётом</a></li>
-          <li class="breadcrumb-list__item"><a href="#" class="breadcrumb-list__link breadcrumb-list__link_active">Видео</a></li>
-        </ul>
-      </section>
-      <div class="wrapper">
-        <!-- Обёртка для того что бы флексануть колонки-->
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Curses web-page" />
+  <title>Видео</title>
+  <link rel="stylesheet" href="./pages/index.css" />
+</head>
 
-        <section class="container">
-          <div class="content">
-            <div class="content__header">
-              <p class="content__title">Видео</p>
+<body class="page">
+  <header class="header">
+    <a class="header__link" target="_blank" href="#">Учебная платформа</a>
+    <nav class="menu">
+      <ul class="menu__list">
+        <li class="menu__list-item">
+          <a id="courses-page-link" class="menu__link menu__link_active" href="./index.html">
+            <img class="menu__icon" src="./images/logo_courses.svg" alt="Курсы" />Курсы
+          </a>
+        </li>
+        <li class="menu__list-item">
+          <a class="menu__link" href="./account.html">
+            <img class="menu__icon" src="./images/logo_profile.svg" alt="Профиль" />Профиль
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main class="main">
+    <section class="breadcrumb">
+      <ul class="breadcrumb-list">
+        <li class="breadcrumb-list__item"><a href="#" class="breadcrumb-list__link">Курсы</a></li>
+        <li class="breadcrumb-list__item"><a href="#" class="breadcrumb-list__link">Кинологическое направление</a></li>
+        <li class="breadcrumb-list__item"><a href="#" class="breadcrumb-list__link">5. Работа «второго номера» совместно
+            со следовым кинологическим расчётом</a></li>
+        <li class="breadcrumb-list__item"><a href="#"
+            class="breadcrumb-list__link breadcrumb-list__link_active">Видео</a></li>
+      </ul>
+    </section>
+    <div class="wrapper">
+      <!-- Обёртка для того что бы флексануть колонки-->
+
+      <section class="container">
+        <div class="content">
+          <div class="content__header">
+            <p class="content__title">Видео</p>
+          </div>
+          <div class="content__video">
+            <video class="video" title="" poster="./images/thumbnail.jpeg">
+              <source src="">
+            </video>
+            <div class="video__controls">
+              <button class="video__button video__button_play"></button>
+              <input class="video__range video__range_time" type="range" min="0" max="100" value="0">
+              <button class="video__button video__button_sound"></button>
+              <input class="video__range video__range_sound" type="range" min="0" max="100" value="30">
+              <button class="video__button video__button_fullscreen"></button>
             </div>
-            <div class="content__video">
-                <video class="video"  title="" poster="./images/thumbnail.jpeg">
-                    <source src="">
-                </video>
-                <div class="video__controls" >
-                    <button class="video__button video__button_play"></button>
-                    <input class="video__range video__range_time" type="range" min="0" max="100" value="0">
-                    <button class="video__button video__button_sound"></button>
-                    <input class="video__range video__range_sound" type="range" min="0" max="100" value="30">
-                    <button class="video__button video__button_fullscreen"></button>
-                </div>
-            </div>
+
+        <div class="navigation">
+          <!-- Для того, чтобы сделать кнопку неактивной, нужно убрать модификатор цвета и добавить модификатор button_disabled -->
+          <button type="button" class="button button_color_white navigation__button"
+            aria-label="Назад">&larr;&nbsp;&nbsp;
+            Назад</button>
+          <button type="button" class="button button_color_orange navigation__button" aria-label="Далее">Далее
+            &nbsp;&nbsp;&rarr;</button>
+        </div>
         </section>
-        
-        
+       
         <section class="aside">
           <h2 class="aside__title">Содержание</h2>
           <div class="accordion">
@@ -103,7 +101,6 @@
                   <p class="accordion__text">Тест</p>
                 </li>
               </ul>         
-            </div>
           </div>
           <div class="accordion">
             <button class="accordion__button" type="button" aria-label="Открыть">
@@ -135,7 +132,6 @@
                   <p class="accordion__text">Тест</p>
                 </li>
               </ul>         
-            </div>
           </div>
           <div class="accordion">
             <button class="accordion__button" type="button" aria-label="Открыть">
@@ -167,7 +163,6 @@
                   <p class="accordion__text">Тест</p>
                 </li>
               </ul>         
-            </div>
           </div>
           <div class="accordion">
             <button class="accordion__button" type="button" aria-label="Открыть">
@@ -183,7 +178,6 @@
                   <p class="accordion__text">Вебинар</p>
                 </li>
               </ul>         
-            </div>
           </div>
           <div class="accordion">
             <button class="accordion__button" type="button" aria-label="Открыть">
@@ -215,7 +209,6 @@
                   <p class="accordion__text">Тест</p>
                 </li>
               </ul>         
-            </div>
           </div>
           <div class="accordion">
             <button class="accordion__button" type="button" aria-label="Открыть">
@@ -243,7 +236,6 @@
                   <p class="accordion__text">Тест</p>
                 </li>
               </ul>         
-            </div>
           </div>
           <div class="accordion">
             <button class="accordion__button" type="button" aria-label="Открыть">
@@ -263,18 +255,11 @@
                   <p class="accordion__text">Тест</p>
                 </li>
               </ul>         
-            </div>
           </div>
-        </section>
-   
-      </div>
+      </section>
+    </div>
+  </main>
+  <script src="./scripts/script.js"></script>
+</body>
 
-      <div class="navigation">
-        <!-- Для того, чтобы сделать кнопку неактивной, нужно убрать модификатор цвета и добавить модификатор button_disabled -->
-        <button type="button" class="button button_color_white navigation__button" aria-label="Назад">&larr;&nbsp;&nbsp;  Назад</button>
-        <button type="button" class="button button_color_orange navigation__button" aria-label="Далее">Далее  &nbsp;&nbsp;&rarr;</button>
-      </div>
-    </main>
-    <script src="./scripts/script.js"></script>
-  </body>
 </html>
