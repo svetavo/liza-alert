@@ -13,3 +13,4 @@ const slide = function(slider) {
 };
 slide(sliderTime);
 slide(sliderSound);
+
