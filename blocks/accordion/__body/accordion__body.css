@@ -1,7 +1,12 @@
 .accordion__body {
-    display: none;
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: max-height .3s, opacity .5s;
 }
 
 .accordion__body_open {
-    display: block;
+    max-height: 100vh;
+    opacity: 1;
 }
+
