@@ -44,6 +44,12 @@
 @import url(../blocks/content/__description/content__description.css);
 @import url(../blocks/content/__result/_status/content__result_status_succes.css);
 
+@import url(../blocks/content/__main/content__main.css);
+@import url(../blocks/content/__main/_active/content__main_active.css);
+@import url(../blocks/content/__main-title/content__main-title.css);
+@import url(../blocks/content/__main-text/content__main-text.css);
+@import url(../blocks/content/__main-span/content__main-span.css);
+
 @import url(../blocks/navigation/navigation.css);
 @import url(../blocks/navigation/__button/navigation__button.css);
 @import url(../blocks/button/button.css);
