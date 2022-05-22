@@ -21,8 +21,9 @@
 @import url(../blocks/content/__video/content__video.css);
 @import url(../blocks/video/video.css);
 @import url(../blocks/video/__controls/video__controls.css);
+@import url(../blocks/video/__icon/video__icon.css);
+@import url(../blocks/video/__icon/_hidden/video__icon_hidden.css);
 @import url(../blocks/video/__button/video__button.css);
-@import url(../blocks/video/__button/_play/video__button_play.css);
 @import url(../blocks/video/__button/_sound/video__button_sound.css);
 @import url(../blocks/video/__button/_fullscreen/video__button_fullscreen.css);
 @import url(../blocks/video/__range/video__range.css);
