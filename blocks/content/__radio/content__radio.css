@@ -12,6 +12,38 @@
   background-image: url(../../../images/radio_checked.svg);
 }
 
+.content_choose_right:checked + .content__radio {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(../../../images/answer_correct.svg);
+}
+
+.content_choose_fail:checked + .content__radio {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(../../../images/answer_fail.svg);
+}
+
+.content_choose_null:not(:checked) + .content__radio {
+  background-image: url(../../../images/answer_not-choose.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.content_choose_not-choose-fail:not(:checked) + .content__radio {
+  background-image: url(../../../images/answer_fail_not_choose.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 .content__invisible:checked ~ .content__text {
   color: #f06000;
+}
+
+.content_choose_right:checked ~ .content__text {
+  color: #008000;
+}
+
+.content_choose_fail:checked ~ .content__text {
+  color: #ff0000;
 }
