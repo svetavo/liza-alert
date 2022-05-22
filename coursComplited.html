@@ -9,76 +9,45 @@
     <link rel="stylesheet" href="./pages/index.css" />
   </head>
 
-<body class="page">
-
-  <header class="header">
-    <a class="header__link" target="_blank" href="#">Учебная платформа</a>
-    <nav class="menu">
-      <ul class="menu__list">
-        <li class="menu__list-item">
-          <a id="courses-page-link" class="menu__link menu__link_active" href="./index.html">
-            <img class="menu__icon" src="./images/logo_courses.svg" alt="Курсы" />Курсы
-          </a>
-        </li>
-        <li class="menu__list-item">
-          <a class="menu__link" href="./account.html">
-            <img class="menu__icon" src="./images/logo_profile.svg" alt="Профиль" />Профиль
-          </a>
-        </li>
-      </ul>
-    </nav>
-  </header>
-
-  <main class="main">
-
-    <section class="breadcrumb">
-      <ul class="breadcrumb-list">
-        <li class="breadcrumb-list__item"><a href="#" class="breadcrumb-list__link">Курсы</a></li>
-        <li class="breadcrumb-list__item"><a href="#" class="breadcrumb-list__link">Кинологическое направление</a></li>
-        <li class="breadcrumb-list__item"><a href="#" class="breadcrumb-list__link">5. Работа «второго номера» совместно
-            со следовым кинологическим расчётом</a></li>
-        <li class="breadcrumb-list__item"><a href="#" class="breadcrumb-list__link breadcrumb-list__link_active">Курс
-            завершён</a></li>
-      </ul>
-    </section>
-
-    <div class="wrapper">
-      <section class="container">
-        <div class="content">
-          <div class="content__header">
-            <p class="content__title">Курс завершен</p>
-          </div>
-          <!-- Блок "Поздравляем/Сожалеем" можно отобразить, добавив класс content__main_active -->
-          <div class="content__main content__main_active">
-            <h2 class="content__main-title">Поздравляем!</h2>
-            <p class="content__main-text">Вы успешно завершили курс «Кинологическое направление».</p>
-            <p class="content__main-text">Теперь вы можете участвовать в поисково-спасательных мероприятиях со своей
-              собакой.</p>
-          </div>
-          <div class="content__main">
-            <h2 class="content__main-title">Сожалеем</h2>
-            <p class="content__main-text">Курс <span class="content__main-span">«Кинологическое направление»</span>
-              не пройден.</p>
-            <p class="content__main-text">Мы предьявляем очень строгие требования к участникам поисково-спасательных
-              мероприятий, из-за чего обучение может быть сложным. Вы можете попробовать себя <span
-                class="content__main-span">в других направлениях</span>.</p>
-          </div>
-        </div>
-        <div class="navigation">
-          <!-- Для того, чтобы сделать кнопку неактивной, нужно убрать модификатор цвета и добавить модификатор button_disabled -->
-          <button type="button" class="button button_color_white navigation__button" aria-label="Назад">
-            &larr; Назад
-          </button>
-          <button type="button" class="button button_color_orange navigation__button" aria-label="Далее">
-            Далее &rarr;
-          </button>
-        </div>
-      </section>
-
-      <section class="aside">
-        <h2 class="aside__title">Содержание</h2>
-        <div class="accordion">
-            <button class="accordion__button" type="button" aria-label="Открыть">
+  <body class="page">
+    <header class="header">
+      <a class="header__link" target="_blank" href="#">Учебная платформа</a>
+      <nav class="menu">
+        <ul class="menu__list">
+          <li class="menu__list-item">
+            <a
+              id="courses-page-link"
+              class="menu__link menu__link_active"
+              href="./index.html"
+            >
+              <img
+                class="menu__icon"
+                src="./images/logo_courses.svg"
+                alt="Курсы"
+              />Курсы
+            </a>
+          </li>
+          <li class="menu__list-item">
+            <a class="menu__link" href="./account.html">
+              <img
+                class="menu__icon"
+                src="./images/logo_profile.svg"
+                alt="Профиль"
+              />Профиль
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main">
+      <section class="breadcrumb">Хлебные крошки</section>
+      <!-- Обёртка для того что бы флексануть колонки-->
+      <div class="wrapper">
+        <section class="video">Видео</section>
+        <section class="aside">
+          <h2 class="aside__title">Содержание</h2>
+          <div class="accordion">
+            <button class="accordion__button">
               <h3 class="accordion__title">1. В каких случаях перспективно применение следовых кинологических расчётов</h3>
               <div class="accordion__icon-wrapper">
                 <img class="accordion__icon" src="./images/accordion_icon.svg">
@@ -108,14 +77,13 @@
                 </li>
               </ul>         
             </div>
-        </div>
-        <div class="accordion">
-          <button class="accordion__button" type="button" aria-label="Открыть">
-            <h3 class="accordion__title">2. Необходимые обеспечительные меры для успешного применения следовых
-              (розыскных собак)</h3>
-            <div class="accordion__icon-wrapper">
-              <img class="accordion__icon" src="./images/accordion_icon.svg" alt="icon">
-            </div> 
+          </div>
+          <div class="accordion">
+            <button class="accordion__button">
+              <h3 class="accordion__title">2. Необходимые обеспечительные меры для успешного применения следовых (розыскных собак)</h3>
+              <div class="accordion__icon-wrapper">
+                <img class="accordion__icon" src="./images/accordion_icon.svg">
+              </div> 
             </button>
             <div class="accordion__body">
               <ul class="accordion__list">
@@ -270,10 +238,13 @@
               </ul>         
             </div>
           </div>
-        </div>
-      </section>
-    </div>
-  </main>
-  <script src="./scripts/accordion.js"></script>
-</body>
+        </section>
+      </div>
+      <div class="navigation">
+        <!-- Для того, чтобы сделать кнопку неактивной, нужно убрать модификатор цвета и добавить модификатор button_disabled -->
+        <button type="button" class="button button_white navigation__button" aria-label="Назад">&larr;&nbsp;&nbsp;  Назад</button>
+        <button type="button" class="button button_orange navigation__button" aria-label="Далее">Далее  &nbsp;&nbsp;&rarr;</button>
+      </div>
+    </main>
+  </body>
 </html>

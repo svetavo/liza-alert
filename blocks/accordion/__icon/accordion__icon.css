@@ -1,7 +1,6 @@
 .accordion__icon {
     width: 10.54px;
     height: 6.25px;
-    transition: transform .4s;
 }
 
 .accordion__icon_open {
