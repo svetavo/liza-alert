@@ -23,8 +23,6 @@
 @import url(../blocks/video/__range/video__range.css);
 @import url(../blocks/video/__range/_time/video__range_time.css);
 @import url(../blocks/video/__range/_sound/video__range_sound.css);
-@import url(../blocks/video/__icon/_hidden/video__icon_hidden.css);
-@import url(../blocks/video/__icon/video__icon.css);
 
 @import url(../blocks/content/content.css);
 @import url(../blocks/content/__answer-item/content__answer-item.css);
