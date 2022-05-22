@@ -13,7 +13,6 @@
     box-sizing: border-box;
 }
 
-.accordion:last-of-type .accordion__button:last-of-type {
+.accordion:last-of-type .accordion__button {
     margin-bottom: 0;
 }
-

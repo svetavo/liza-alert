@@ -14,7 +14,3 @@
 .accordion:last-of-type .accordion__item:last-of-type {
     margin-bottom: 0;
 }
-
-.accordion:last-of-type .accordion__item:first-of-type {
-    margin-top: 32px;
-}
