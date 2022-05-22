@@ -21,7 +21,6 @@ const slide = function(slider) {
 slide(sliderTime);
 slide(sliderSound);
 
-
 // fullscreen
 function toggleFullscreen() {
     let elem = document.querySelector("video");
