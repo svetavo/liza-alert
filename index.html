@@ -48,11 +48,22 @@
             <p class="content__title">Видео</p>
           </div>
           <div class="content__video">
-            <video class="video" title="" poster="./images/thumbnail.jpeg">
-              <source src="">
-            </video>
+            <video src="https://pictures.s3.yandex.net/iframes_topic/1.mp4" class="video"></video>
             <div class="video__controls">
-              <button class="video__button video__button_play"></button>
+              <button id="play" class="video__button">
+                <svg class="video__icon">
+                  <use href="#play-icon"></use>
+                  <use class="video__icon_hidden" href="#pause"></use>
+                </svg>
+              </button>
+              <svg style="display: none">
+                <symbol id="pause" viewBox="0 0 24 24">
+                  <path d="M14.016 5.016h3.984v13.969h-3.984v-13.969zM6 18.984v-13.969h3.984v13.969h-3.984z"></path>
+                </symbol>
+                <symbol id="play-icon" viewBox="0 0 24 24">
+                  <path d="M8.016 5.016l10.969 6.984-10.969 6.984v-13.969z"></path>
+                </symbol>
+              </svg>
               <input class="video__range video__range_time" type="range" min="0" max="100" value="0">
               <button class="video__button video__button_sound"></button>
               <input class="video__range video__range_sound" type="range" min="0" max="100" value="30">
