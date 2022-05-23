@@ -52,7 +52,6 @@ function updateProgress(params) {
   sliderTime.value = (video.currentTime / video.duration) * 100;
   let minutes = Math.floor(video.currentTime / 60);
   let seconds = Math.floor(video.currentTime % 60)
-  timeElapsed.innerHTML = `${minutes}: ${seconds}`
 
 }
 video.addEventListener('timeupdate', updateProgress);
