@@ -1,27 +1,12 @@
 const sliderTime = document.querySelector(".video__range_time");
 const sliderSound = document.querySelector(".video__range_sound");
 const fullScreenBtn = document.querySelector(".video__button_fullscreen");
-const playButton = document.getElementById("play");
-const video = document.querySelector("video");
+const playButton = document.querySelector(".video__button");
+const video = document.querySelector(".video");
 const playbackIcons = document.querySelectorAll(".video__icon use");
 const timeElapsed = document.getElementById("time-elapsed");
 const duration = document.getElementById("duration");
 const nextBtn = document.querySelector('[name="next-btn"]');
-
-slider.style.background = `linear-gradient(to right, #FF6600 0%, #FF6600 ${
-  ((value - min) / (max - min)) * 100
-}%, #9397A3 ${((value - min) / (max - min)) * 100}%, #9397A3 100%)`;
-
-slider.oninput = function () {
-  this.style.background = `linear-gradient(to right, #FF6600 0%, #FF6600 ${
-    ((this.value - this.min) / (this.max - this.min)) * 100
-  }%, #9397A3 ${
-    ((this.value - this.min) / (this.max - this.min)) * 100
-  }%, #9397A3 100%)`;
-};
-slide(sliderTime);
-slide(sliderSound);
-
 // fullscreen
 
 function toggleFullscreen() {
@@ -63,30 +48,21 @@ nextBtn.addEventListener("click", () => {
 
 // таймер видео
 
-function formatTime(timeInSeconds) {
-  const result = new Date(timeInSeconds * 1000).toISOString().substr(11, 8);
-  return {
-    minutes: result.substr(3, 2),
-    seconds: result.substr(6, 2),
-  };
+function updateProgress(params) {
+  sliderTime.value = (video.currentTime / video.duration) * 100;
+  let minutes = Math.floor(video.currentTime / 60);
+  let seconds = Math.floor(video.currentTime % 60)
+  timeElapsed.innerHTML = `${minutes}: ${seconds}`
+
+}
+video.addEventListener('timeupdate', updateProgress);
+
+function setProgress(params) {
+  video.currentTime = (sliderTime.value * video.duration) / 100;
 }
 
-function initializeVideo() {
-  const videoDuration = Math.round(video.duration);
-  const time = formatTime(videoDuration);
-  duration.innerText = `${time.minutes}:${time.seconds}`;
-  duration.setAttribute("datetime", `${time.minutes}m ${time.seconds}s`);
-}
+sliderTime.addEventListener('change', setProgress)
 
-video.addEventListener("loadedmetadata", initializeVideo);
-
-function updateTimeElapsed() {
-  const time = formatTime(Math.round(video.currentTime));
-  timeElapsed.innerText = `${time.minutes}:${time.seconds}`;
-  timeElapsed.setAttribute("datetime", `${time.minutes}m ${time.seconds}s`);
-}
-
-video.addEventListener("timeupdate", updateTimeElapsed);
 
 // громкость
 const volumeButton = document.getElementById("volume-button");
@@ -137,3 +113,4 @@ function toggleMute() {
 }
 
 volumeButton.addEventListener("click", toggleMute);
+
