@@ -33,6 +33,9 @@
 @import url(../blocks/video/__range/video__range.css);
 @import url(../blocks/video/__range/_time/video__range_time.css);
 @import url(../blocks/video/__range/_sound/video__range_sound.css);
+@import url(../blocks/video/__time-count/video__time-count.css);
+@import url(../blocks/video/__icon-volume/video__icon-volume.css);
+@import url(../blocks/video/__icon-volume/_hidden/video__icon-volume_hidden.css);
 
 @import url(../blocks/navigation/navigation.css);
 @import url(../blocks/navigation/__button/navigation__button.css);
