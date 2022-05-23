@@ -19,19 +19,25 @@
 @import url(../blocks/breadcrumb-list/__link/_active/breadcrumb-list__link_active.css);
 
 @import url(../blocks/content/content.css);
+@import url(../blocks/content/__answer-item/content__answer-item.css);
+@import url(../blocks/content/__answer-list/content__answer-list.css);
+@import url(../blocks/content/__checkbox/content__checkbox.css);
+@import url(../blocks/content/__conditions/content__conditions.css);
 @import url(../blocks/content/__header/content__header.css);
+@import url(../blocks/content/__question-text/content__question-text.css);
+@import url(../blocks/content/__question/content__question.css);
+@import url(../blocks/content/__radio/content__radio.css);
 @import url(../blocks/content/__title/content__title.css);
-@import url(../blocks/content/__video/content__video.css);
-
-@import url(../blocks/video/video.css);
-@import url(../blocks/video/__controls/video__controls.css);
-@import url(../blocks/video/__button/video__button.css);
-@import url(../blocks/video/__button/_play/video__button_play.css);
-@import url(../blocks/video/__button/_sound/video__button_sound.css);
-@import url(../blocks/video/__button/_fullscreen/video__button_fullscreen.css);
-@import url(../blocks/video/__range/video__range.css);
-@import url(../blocks/video/__range/_time/video__range_time.css);
-@import url(../blocks/video/__range/_sound/video__range_sound.css);
+@import url(../blocks/content/__divider/content__divider.css);
+@import url(../blocks/content/__show-result/content__show-result.css);
+@import url(../blocks/content/__invisible/content__invisible.css);
+@import url(../blocks/content/__text/content__text.css);
+@import url(../blocks/content/__result/_status/content__result_status_fail.css);
+@import url(../blocks/content/__result/content__result.css);
+@import url(../blocks/content/__result-text/content__result-text.css);
+@import url(../blocks/content/__result-value/content__result-value.css);
+@import url(../blocks/content/__description/content__description.css);
+@import url(../blocks/content/__result/_status/content__result_status_succes.css);
 
 @import url(../blocks/navigation/navigation.css);
 @import url(../blocks/navigation/__button/navigation__button.css);

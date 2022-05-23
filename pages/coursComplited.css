@@ -21,17 +21,12 @@
 @import url(../blocks/content/content.css);
 @import url(../blocks/content/__header/content__header.css);
 @import url(../blocks/content/__title/content__title.css);
-@import url(../blocks/content/__video/content__video.css);
 
-@import url(../blocks/video/video.css);
-@import url(../blocks/video/__controls/video__controls.css);
-@import url(../blocks/video/__button/video__button.css);
-@import url(../blocks/video/__button/_play/video__button_play.css);
-@import url(../blocks/video/__button/_sound/video__button_sound.css);
-@import url(../blocks/video/__button/_fullscreen/video__button_fullscreen.css);
-@import url(../blocks/video/__range/video__range.css);
-@import url(../blocks/video/__range/_time/video__range_time.css);
-@import url(../blocks/video/__range/_sound/video__range_sound.css);
+@import url(../blocks/content/__main/content__main.css);
+@import url(../blocks/content/__main/_active/content__main_active.css);
+@import url(../blocks/content/__main-title/content__main-title.css);
+@import url(../blocks/content/__main-text/content__main-text.css);
+@import url(../blocks/content/__main-span/content__main-span.css);
 
 @import url(../blocks/navigation/navigation.css);
 @import url(../blocks/navigation/__button/navigation__button.css);
@@ -39,9 +34,6 @@
 @import url(../blocks/button/_disabled/button_disabled.css);
 @import url(../blocks/button/_color/button_color_orange.css);
 @import url(../blocks/button/_color/button_color_white.css);
-@import url(../blocks/button/_result/button_result.css);
-@import url(../blocks/button/_status/button_status_fail.css);
-@import url(../blocks/button/_status/button_status_succes.css);
 @import url(../blocks/button/__icon/button__icon.css);
 
 @import url(../blocks/two-columns/two-columns.css);
