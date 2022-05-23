@@ -48,26 +48,65 @@
             <p class="content__title">Видео</p>
           </div>
           <div class="content__video">
-            <video class="video" poster="./images/thumbnail.jpeg" src="https://pictures.s3.yandex.net/iframes_topic/1.mp4">
+            <video class="video" poster="./images/thumbnail.jpeg"
+              src="https://pictures.s3.yandex.net/iframes_topic/1.mp4">
             </video>
             <div class="video__controls">
+              <!-- пауза/плей -->
               <button id="play" class="video__button">
                 <svg class="video__icon">
-                  <use href="#play-icon"><symbol id="play-icon" viewBox="0 0 24 24">
-                    <path d="M8.016 5.016l10.969 6.984-10.969 6.984v-13.969z"></path>
-                  </symbol></use>
-                  <use class="video__icon_hidden" href="#pause"><symbol id="pause" viewBox="0 0 24 24">
-                    <path d="M14.016 5.016h3.984v13.969h-3.984v-13.969zM6 18.984v-13.969h3.984v13.969h-3.984z"></path>
-                  </symbol></use>
+                  <use href="#play-icon">
+                    <symbol id="play-icon" viewBox="0 0 24 24">
+                      <path d="M8.016 5.016l10.969 6.984-10.969 6.984v-13.969z"></path>
+                    </symbol>
+                  </use>
+                  <use class="video__icon_hidden" href="#pause">
+                    <symbol id="pause" viewBox="0 0 24 24">
+                      <path d="M14.016 5.016h3.984v13.969h-3.984v-13.969zM6 18.984v-13.969h3.984v13.969h-3.984z"></path>
+                    </symbol>
+                  </use>
                 </svg>
               </button>
+              <!-- время -->
               <input class="video__range video__range_time" type="range" min="0" max="100" value="0">
-              <button class="video__button video__button_sound"></button>
-              <input class="video__range video__range_sound" type="range" min="0" max="100" value="30">
+              <div class="video__time-count">
+                <time id="time-elapsed">00:00</time>
+                <span> / </span>
+                <time id="duration">00:00</time>
+              </div>
+              <!-- звук -->
+              <button data-title="Mute" class="video__volume-button" id="volume-button">
+                <svg class="video__icon-volume">
+                  <use class="video__icon-volume_hidden" href="#volume-mute">
+                    <symbol id="volume-mute" viewBox="0 0 24 24">
+                      <path
+                        d="M12 3.984v4.219l-2.109-2.109zM4.266 3l16.734 16.734-1.266 1.266-2.063-2.063q-1.547 1.313-3.656 1.828v-2.063q1.172-0.328 2.25-1.172l-4.266-4.266v6.75l-5.016-5.016h-3.984v-6h4.734l-4.734-4.734zM18.984 12q0-2.391-1.383-4.219t-3.586-2.484v-2.063q3.047 0.656 5.016 3.117t1.969 5.648q0 2.203-1.031 4.172l-1.5-1.547q0.516-1.266 0.516-2.625zM16.5 12q0 0.422-0.047 0.609l-2.438-2.438v-2.203q1.031 0.516 1.758 1.688t0.727 2.344z">
+                      </path>
+                    </symbol>
+                  </use>
+                  <use class="video__icon-volume_hidden" href="#volume-low">
+                    <symbol id="volume-low" viewBox="0 0 24 24">
+                      <path
+                        d="M5.016 9h3.984l5.016-5.016v16.031l-5.016-5.016h-3.984v-6zM18.516 12q0 2.766-2.531 4.031v-8.063q1.031 0.516 1.781 1.711t0.75 2.32z">
+                      </path>
+                    </symbol>
+                  </use>
+                  <use href="#volume-high">
+                    <symbol id="volume-high" viewBox="0 0 24 24">
+                      <path
+                        d="M14.016 3.234q3.047 0.656 5.016 3.117t1.969 5.648-1.969 5.648-5.016 3.117v-2.063q2.203-0.656 3.586-2.484t1.383-4.219-1.383-4.219-3.586-2.484v-2.063zM16.5 12q0 2.813-2.484 4.031v-8.063q1.031 0.516 1.758 1.688t0.727 2.344zM3 9h3.984l5.016-5.016v16.031l-5.016-5.016h-3.984v-6z">
+                      </path>
+                    </symbol>
+                  </use>
+                </svg>
+              </button>
+              <input class="video__range video__range_sound" id="volume" type="range" min="0" max="1" value="1"
+                step="0.01">
+              <!-- фуллскрин -->
               <button class="video__button video__button_fullscreen"></button>
-                </div>
+            </div>
           </div>
-          </div>
+        </div>
 
         <div class="navigation">
           <!-- Для того, чтобы сделать кнопку неактивной, нужно убрать модификатор цвета и добавить модификатор button_disabled -->
@@ -78,15 +117,16 @@
             &nbsp;&nbsp;&rarr;</button>
         </div>
       </section>
-       
+
       <section class="aside">
         <h2 class="aside__title">Содержание</h2>
         <div class="accordion">
           <button class="accordion__button" type="button" aria-label="Открыть">
-            <h3 class="accordion__title">1. В каких случаях перспективно применение следовых кинологических расчётов</h3>
+            <h3 class="accordion__title">1. В каких случаях перспективно применение следовых кинологических расчётов
+            </h3>
             <div class="accordion__icon-wrapper">
               <img class="accordion__icon" src="./images/accordion_icon.svg" alt="icon">
-            </div> 
+            </div>
           </button>
           <div class="accordion__body">
             <ul class="accordion__list">
@@ -110,15 +150,16 @@
                 <img class="menu__icon" src="./images/success_icon.svg" alt="icon">
                 <p class="accordion__text">Тест</p>
               </li>
-            </ul>    
-          </div>     
+            </ul>
+          </div>
         </div>
         <div class="accordion">
           <button class="accordion__button" type="button" aria-label="Открыть">
-            <h3 class="accordion__title">2. Необходимые обеспечительные меры для успешного применения следовых (розыскных собак)</h3>
+            <h3 class="accordion__title">2. Необходимые обеспечительные меры для успешного применения следовых
+              (розыскных собак)</h3>
             <div class="accordion__icon-wrapper">
               <img class="accordion__icon" src="./images/accordion_icon.svg" alt="icon">
-            </div> 
+            </div>
           </button>
           <div class="accordion__body">
             <ul class="accordion__list">
@@ -142,15 +183,16 @@
                 <img class="menu__icon" src="./images/success_icon.svg" alt="icon">
                 <p class="accordion__text">Тест</p>
               </li>
-            </ul>   
-          </div>      
+            </ul>
+          </div>
         </div>
         <div class="accordion">
           <button class="accordion__button" type="button" aria-label="Открыть">
-            <h3 class="accordion__title">3. Особенности привлечения следовых расчётов на ПСР и особенности взаимодействия</h3>
+            <h3 class="accordion__title">3. Особенности привлечения следовых расчётов на ПСР и особенности
+              взаимодействия</h3>
             <div class="accordion__icon-wrapper">
               <img class="accordion__icon accordion__icon_open" src="./images/accordion_icon.svg" alt="icon">
-            </div> 
+            </div>
           </button>
           <div class="accordion__body accordion__body_open">
             <ul class="accordion__list">
@@ -174,15 +216,15 @@
                 <img class="menu__icon" src="./images/success_icon.svg" alt="icon">
                 <p class="accordion__text">Тест</p>
               </li>
-            </ul> 
-          </div>           
+            </ul>
+          </div>
         </div>
         <div class="accordion">
           <button class="accordion__button" type="button" aria-label="Открыть">
             <h3 class="accordion__title">4. Корректная постановка задачи кинологу и особенности её исполнения</h3>
             <div class="accordion__icon-wrapper">
               <img class="accordion__icon accordion__icon_open" src="./images/accordion_icon.svg" alt="icon">
-            </div> 
+            </div>
           </button>
           <div class="accordion__body accordion__body_open">
             <ul class="accordion__list">
@@ -190,15 +232,15 @@
                 <img class="menu__icon" src="./images/success_icon.svg" alt="icon">
                 <p class="accordion__text">Вебинар</p>
               </li>
-            </ul>   
-          </div>         
+            </ul>
+          </div>
         </div>
         <div class="accordion">
           <button class="accordion__button" type="button" aria-label="Открыть">
             <h3 class="accordion__title">5. Работа «второго номера» совместно со следовым кинологическим расчётом</h3>
             <div class="accordion__icon-wrapper">
               <img class="accordion__icon accordion__icon_open" src="./images/accordion_icon.svg" alt="icon">
-            </div> 
+            </div>
           </button>
           <div class="accordion__body accordion__body_open">
             <ul class="accordion__list">
@@ -222,15 +264,16 @@
                 <img class="menu__icon" src="./images/test-icon.svg" alt="icon">
                 <p class="accordion__text">Тест</p>
               </li>
-            </ul>  
-          </div>          
+            </ul>
+          </div>
         </div>
         <div class="accordion">
           <button class="accordion__button" type="button" aria-label="Открыть">
-            <h3 class="accordion__title">6. Оценка качества и особенности анализа результата проделанной следовым кинологическим расчётом работы</h3>
+            <h3 class="accordion__title">6. Оценка качества и особенности анализа результата проделанной следовым
+              кинологическим расчётом работы</h3>
             <div class="accordion__icon-wrapper">
               <img class="accordion__icon" src="./images/accordion_icon.svg" alt="icon">
-            </div> 
+            </div>
           </button>
           <div class="accordion__body">
             <ul class="accordion__list">
@@ -250,15 +293,16 @@
                 <img class="menu__icon" src="./images/test-icon.svg" alt="icon">
                 <p class="accordion__text">Тест</p>
               </li>
-            </ul> 
-          </div>           
+            </ul>
+          </div>
         </div>
         <div class="accordion">
           <button class="accordion__button" type="button" aria-label="Открыть">
-            <h3 class="accordion__title">7. Особенности и пределы использования РПРС ом полученной в ходе применения специальной следовой собаки информации в целях успешного разрешения поисков</h3>
+            <h3 class="accordion__title">7. Особенности и пределы использования РПРС ом полученной в ходе применения
+              специальной следовой собаки информации в целях успешного разрешения поисков</h3>
             <div class="accordion__icon-wrapper">
               <img class="accordion__icon" src="./images/accordion_icon.svg" alt="icon">
-            </div> 
+            </div>
           </button>
           <div class="accordion__body">
             <ul class="accordion__list">
@@ -270,8 +314,8 @@
                 <img class="menu__icon" src="./images/test-icon.svg" alt="icon">
                 <p class="accordion__text">Тест</p>
               </li>
-            </ul>   
-          </div>         
+            </ul>
+          </div>
         </div>
       </section>
     </div>

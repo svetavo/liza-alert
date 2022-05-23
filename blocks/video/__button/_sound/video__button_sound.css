@@ -1,6 +1,5 @@
-.video__button_sound {
-    background: url(../../../../images/sound.svg);
-    width: 20px;
-    height: 16px;
-    margin-right: 10px;
+.video__volume-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
 }
