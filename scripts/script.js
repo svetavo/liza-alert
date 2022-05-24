@@ -46,22 +46,37 @@ nextBtn.addEventListener("click", () => {
   document.location.href = "./test.html";
 });
 
-// таймер видео
+
+
 
 function updateProgress(params) {
   sliderTime.value = (video.currentTime / video.duration) * 100;
   let minutes = Math.floor(video.currentTime / 60);
   let seconds = Math.floor(video.currentTime % 60)
-
+  slide(sliderTime);
 }
 video.addEventListener('timeupdate', updateProgress);
 
 function setProgress(params) {
   video.currentTime = (sliderTime.value * video.duration) / 100;
-}
+  
 
+}
 sliderTime.addEventListener('change', setProgress)
 
+
+
+const slide = function(slider) {
+    const min = slider.min;
+    const max = slider.max;
+    const value = slider.value;
+    slider.style.background = `linear-gradient(to right, #FF6600 0%, #FF6600 ${(value - min) / (max - min) * 100}%, #9397A3 ${(value - min) / (max - min) * 100}%, #9397A3 100%)`;
+    slider.oninput = function () {
+    this.style.background = `linear-gradient(to right, #FF6600 0%, #FF6600 ${(this.value - this.min) / (this.max - this.min) * 100}%, #9397A3 ${(this.value - this.min) / (this.max - this.min) * 100}%, #9397A3 100%)`;
+};
+};
+
+slide(sliderSound);
 
 // громкость
 const volumeButton = document.getElementById("volume-button");
