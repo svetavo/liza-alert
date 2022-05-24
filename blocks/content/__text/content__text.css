@@ -1,6 +1,8 @@
 .content__text {
-    margin: 0;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 24px;
+  display: block;
+  max-width: 776px;
+  margin: 0;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
 }

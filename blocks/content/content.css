@@ -1,7 +1,6 @@
 .content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+
+  width: 872px;
   gap: 32px;
   padding: 32px;
   background: #ffffff;
