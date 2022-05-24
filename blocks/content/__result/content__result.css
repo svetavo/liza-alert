@@ -2,8 +2,10 @@
   width: 680px;
   min-height: 142px;
   padding: 32px 64px;
-  display: none;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
   gap: 24px;
   border-radius: 16px;
 }

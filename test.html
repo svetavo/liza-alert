@@ -10,62 +10,186 @@
   <link rel="stylesheet" href="./pages/test.css" />
 </head>
 
-  <body class="page">
-    <header class="header">
-      <a class="header__link" target="_blank" href="#">Учебная платформа</a>
-      <nav class="menu">
-        <ul class="menu__list">
-          <li class="menu__list-item">
-            <a
-              id="courses-page-link"
-              class="menu__link menu__link_active"
-              href="./index.html"
-            >
-              <img
-                class="menu__icon"
-                src="./images/logo_courses.svg"
-                alt="Курсы"
-              />Курсы
-            </a>
-          </li>
-          <li class="menu__list-item">
-            <a class="menu__link" href="./account.html">
-              <img
-                class="menu__icon"
-                src="./images/logo_profile.svg"
-                alt="Профиль"
-              />Профиль
-            </a>
-          </li>
-        </ul>
-      </nav>
-    </header>
+<body class="page">
+  <header class="header">
+    <a class="header__link" target="_blank" href="#">Учебная платформа</a>
+    <nav class="menu">
+      <ul class="menu__list">
+        <li class="menu__list-item">
+          <a id="courses-page-link" class="menu__link menu__link_active" href="./index.html">
+            <img class="menu__icon" src="./images/logo_courses.svg" alt="Курсы" />Курсы
+          </a>
+        </li>
+        <li class="menu__list-item">
+          <a class="menu__link" href="./account.html">
+            <img class="menu__icon" src="./images/logo_profile.svg" alt="Профиль" />Профиль
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
 
-    <main class="main">
-      <section class="breadcrumb">
-        <ul class="breadcrumb-list">
-          <li class="breadcrumb-list__item">
-            <a href="#" class="breadcrumb-list__link">Курсы</a>
-          </li>
-          <li class="breadcrumb-list__item">
-            <a href="#" class="breadcrumb-list__link"
-              >Кинологическое направление</a
-            >
-          </li>
-          <li class="breadcrumb-list__item">
-            <a href="#" class="breadcrumb-list__link"
-              >5. Работа «второго номера» совместно со следовым кинологическим
-              расчётом</a
-            >
-          </li>
-          <li class="breadcrumb-list__item">
-            <a
-              href="#"
-              class="breadcrumb-list__link breadcrumb-list__link_active"
-              >Тест</a
-            >
-          </li>
-        </ul>
+  <main class="main">
+    <section class="breadcrumb">
+      <ul class="breadcrumb-list">
+        <li class="breadcrumb-list__item"><a href="#" class="breadcrumb-list__link">Курсы</a></li>
+        <li class="breadcrumb-list__item"><a href="#" class="breadcrumb-list__link">Кинологическое направление</a></li>
+        <li class="breadcrumb-list__item"><a href="#" class="breadcrumb-list__link">5. Работа «второго номера» совместно
+            со следовым кинологическим расчётом</a></li>
+        <li class="breadcrumb-list__item"><a href="#"
+            class="breadcrumb-list__link breadcrumb-list__link_active">Тест</a></li>
+      </ul>
+    </section>
+
+    <!-- Обёртка для того что бы флексануть колонки-->
+    <div class="wrapper">
+      <section class="test">
+
+        <div class="content">
+          <div class="content__header">
+            <p class="content__title">Тест</p>
+          </div>
+
+          <!-- Блок с тест-превью -->
+          <p class="content__text">
+            Что мы узнали об особенностях привлечения следовых расчётов на ПСР и
+            особенностях взаимодействия между участниками ППС
+          </p>
+          <div class="two-columns">
+            <div class="two-columns__left">
+              <div class="two-columns__icons">
+                <img src="./images/tick.svg" class="two-columns__icon two-columns__row" alt="Галочка" />
+                <img src="./images/repeat.svg" class="two-columns__icon two-columns__row" alt="Повтор" />
+                <img src="./images/hourglass.svg" class="two-columns__icon" alt="Песочные часы" />
+              </div>
+              <div class="two-columns__text-area">
+                <p class="content__text two-columns__row">Проходной балл:</p>
+                <p class="content__text two-columns__row">Количество попыток:</p>
+                <p class="content__text">Срок сдачи:</p>
+              </div>
+            </div>
+            <div class="two-columns__right">
+              <p class="content__text two-columns__row">80%</p>
+              <p class="content__text two-columns__row">3</p>
+              <p class="content__text">22.02.2022 г. 16:20 (GMT+3)</p>
+            </div>
+          </div>
+          <button type="button" class="button button_color_orange" aria-label="Начать тест">
+            Начать тест
+          </button>
+        </div>
+
+        <!-- Блок с вопросами -->
+        <div class="content">
+          <div class="content__header">
+            <p class="content__title">Тест</p>
+            <p class="content__conditions">Посмотреть условия</p>
+          </div>
+          <div class="content__question">
+            <p class="content__question-text">
+              1. В каких случаях перспективно применение следовых кинологических
+              расчётов?
+            </p>
+            <ul class="content__answer-list">
+              <li class="content__answer-item">
+                <label for="first">
+                  <input type="checkbox" id="first" class="content__invisible" />
+                  <span class="content__checkbox"></span>
+                  <span class="content__text">Оказание помощи гражданам, оказавшимся в зонах бедствия
+                    или пропавшим в безлюдной местности</span>
+                </label>
+              </li>
+              <li class="content__answer-item">
+                <label for="second">
+                  <input type="checkbox" id="second" class="content__invisible" />
+                  <span class="content__checkbox"></span>
+                  <span class="content__text">Обучение животного идти как по горячему, так и по остывшему
+                    следу</span>
+                </label>
+              </li>
+              <li class="content__answer-item">
+                <label for="third">
+                  <input type="checkbox" id="third" class="content__invisible" />
+                  <span class="content__checkbox"></span>
+                  <span class="content__text">Поиск тел и их остатков с применением специально обученных
+                    собак</span>
+                </label>
+              </li>
+            </ul>
+          </div>
+          <div class="content__divider"></div>
+          <div class="content__question">
+            <p class="content__question-text">
+              2. С какого возраста следует начинать дрессировку по курсу ПСС?
+            </p>
+            <ul class="content__answer-list">
+              <li class="content__answer-item">
+                <label for="six">
+                  <input type="radio" id="six" name="age" class="content__invisible" />
+                  <span class="content__radio"></span>
+                  <span class="content__text">6 месяцев</span>
+                </label>
+              </li>
+              <li class="content__answer-item">
+                <label for="one">
+                  <input type="radio" id="one" name="age" class="content__invisible" />
+                  <span class="content__radio"></span>
+                  <span class="content__text">1–1,5 года</span>
+                </label>
+              </li>
+              <li class="content__answer-item">
+                <label for="three">
+                  <input type="radio" id="three" name="age" class="content__invisible" />
+                  <span class="content__radio"></span>
+                  <span class="content__text">3 года</span>
+                </label>
+              </li>
+            </ul>
+          </div>
+
+          <!-- неудачный результат -->
+          <div class="content__result content__result_status_fail">
+            <p class="content__result-value">33%</p>
+            <div class="content__description">
+              <p class="content__result-text">
+                К сожалению, вы не набрали проходной результат.
+              </p>
+              <p class="content__result-text">
+                Нажмите «Пересдать», чтобы попробовать снова.
+              </p>
+            </div>
+          </div>
+
+          <!-- успех -->
+          <div class="content__result content__result_status_succes">
+            <p class="content__result-value">83%</p>
+            <div class="content__description">
+              <p class="content__result-text">
+                Отличный результат!
+              </p>
+              <p class="content__result-text">
+                Нажмите «Далее», чтобы продолжить.<br>
+                Если считаете, что можете лучше, нажмите «Пересдать». В случае если результат будет хуже, засчитается
+                наивысший результат.
+              </p>
+            </div>
+          </div>
+
+          <button type="submit" class="button button_disabled button_result button_color_white button_status_succes"
+            aria-label="Пересдать">
+            Пересдать
+          </button>
+        </div>
+
+        <div class="navigation">
+          <!-- Для того, чтобы сделать кнопку неактивной, нужно убрать модификатор цвета и добавить модификатор button_disabled -->
+          <button type="button" class="button button_color_white navigation__button" aria-label="Назад">
+            &larr; Назад
+          </button>
+          <button type="button" class="button button_color_orange navigation__button" aria-label="Далее">
+            Далее &rarr;
+          </button>
+        </div>
       </section>
 
       <section class="aside">
@@ -285,10 +409,12 @@
               </li>
             </ul>
           </div>
-        </section>
-      </div>
-    </main>
-    <script src="./scripts/accordion.js"></script>
-    <script src="./scripts/navigations.js"></script>
-  </body>
+        </div>
+      </section>
+    </div>
+
+  </main>
+  <script src="./scripts/accordion.js"></script>
+</body>
+
 </html>
