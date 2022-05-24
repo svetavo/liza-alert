@@ -150,6 +150,8 @@ function returnToTest() {
     el.classList.remove("content__main_active")
   );
   setPrevSideInfo();
+  nextBtn.removeEventListener('click', loadCoursesPage);
+  nextBtn.addEventListener("click", showCourseComplitedPage);
 }
 
 function returnToTestPreview() {
@@ -166,6 +168,8 @@ function showCourseComplitedPage() {
   }
   backBtn.removeEventListener("click", returnToTestPreview);
   backBtn.addEventListener("click", returnToTest);
+  nextBtn.removeEventListener('click', showCourseComplitedPage);
+  nextBtn.addEventListener('click', loadCoursesPage)
   updateSideInfo();
 }
 
@@ -185,6 +189,10 @@ function updateSideInfo() {
   breadcrumbs[3].querySelector(".breadcrumb-list__link_active").textContent =
     "Курс завершен";
   breadcrumbs[2].style.display = "none";
+}
+
+function loadCoursesPage() {
+  document.location.href = "./courses.html";
 }
 
 setStartNavigation();

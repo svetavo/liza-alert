@@ -77,7 +77,10 @@
 @import url(../blocks/accordion/__title/accordion__title.css);
 @import url(../blocks/accordion/__icon-wrapper/accordion__icon-wrapper.css);
 @import url(../blocks/accordion/__icon/accordion__icon.css);
+@import url(../blocks/accordion/__icon/_open/accordion__icon_open.css);
 @import url(../blocks/accordion/__body/accordion__body.css);
+@import url(../blocks/accordion/__body/_open/accordion__body_open.css);
 @import url(../blocks/accordion/__list/accordion__list.css);
 @import url(../blocks/accordion/__item/accordion__item.css);
+@import url(../blocks/accordion/__item/_active/accordion__item_active.css);
 @import url(../blocks/accordion/__text/accordion__text.css);

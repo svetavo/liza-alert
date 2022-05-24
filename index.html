@@ -16,7 +16,7 @@
     <nav class="menu">
       <ul class="menu__list">
         <li class="menu__list-item">
-          <a id="courses-page-link" class="menu__link menu__link_active" href="./index.html">
+          <a id="courses-page-link" class="menu__link menu__link_active" href="courses.html">
             <img class="menu__icon" src="./images/logo_courses.svg" alt="Курсы" />Курсы
           </a>
         </li>
@@ -69,6 +69,11 @@
               </button>
               <!-- время -->
               <input class="video__range video__range_time" type="range" min="0" max="100" value="0">
+              <div class="video__time-count">
+                <time id="time-elapsed">00:00</time>
+                <span> / </span>
+                <time id="duration">00:00</time>
+              </div>
               <!-- звук -->
               <button data-title="Mute" class="video__volume-button" id="volume-button">
                 <svg class="video__icon-volume">
