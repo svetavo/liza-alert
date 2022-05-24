@@ -43,7 +43,7 @@
       <!-- Обёртка для того что бы флексануть колонки-->
 
       <section class="container">
-        <div class="content">
+        <div class="content content_visible">
           <div class="content__header">
             <p class="content__title">Видео</p>
           </div>
@@ -69,11 +69,6 @@
               </button>
               <!-- время -->
               <input class="video__range video__range_time" type="range" min="0" max="100" value="0">
-              <div class="video__time-count">
-                <time id="time-elapsed">00:00</time>
-                <span> / </span>
-                <time id="duration">00:00</time>
-              </div>
               <!-- звук -->
               <button data-title="Mute" class="video__volume-button" id="volume-button">
                 <svg class="video__icon-volume">
@@ -111,9 +106,9 @@
         <div class="navigation">
           <!-- Для того, чтобы сделать кнопку неактивной, нужно убрать модификатор цвета и добавить модификатор button_disabled -->
           <button type="button" class="button button_color_white navigation__button"
-            aria-label="Назад">&larr;&nbsp;&nbsp;
+            aria-label="Назад" name="back-bnt">&larr;&nbsp;&nbsp;
             Назад</button>
-          <button type="button" class="button button_color_orange navigation__button" aria-label="Далее">Далее
+          <button type="button" class="button button_color_orange navigation__button" name="next-btn" aria-label="Далее">Далее
             &nbsp;&nbsp;&rarr;</button>
         </div>
       </section>

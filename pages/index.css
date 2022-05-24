@@ -47,6 +47,8 @@
 @import url(../blocks/button/_status/button_status_fail.css);
 @import url(../blocks/button/_status/button_status_succes.css);
 @import url(../blocks/button/__icon/button__icon.css);
+@import url(../blocks/button/__show-result/button__show-result.css);
+@import url(../blocks/button/__invisible/button__invisible.css);
 
 @import url(../blocks/two-columns/two-columns.css);
 @import url(../blocks/two-columns/__left/two-columns__left.css);
