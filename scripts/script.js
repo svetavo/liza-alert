@@ -63,32 +63,43 @@ function updatePlayButton() {
 playButton.addEventListener('click', updatePlayButton);
 
 
-// таймер видео
+function updateProgress(params) {
+  sliderTime.value = (video.currentTime / video.duration) * 100;
+  let minutes = Math.floor(video.currentTime / 60);
+  let seconds = Math.floor(video.currentTime % 60)
+  slide(sliderTime);
 
-function formatTime(timeInSeconds) {
-  const result = new Date(timeInSeconds * 1000).toISOString().substr(11, 8);
-  return {
-    minutes: result.substr(3, 2),
-    seconds: result.substr(6, 2),
-  };
-};
 
-function initializeVideo() {
-  const videoDuration = Math.round(video.duration);
-  const time = formatTime(videoDuration);
-  duration.innerText = `${time.minutes}:${time.seconds}`;
-  duration.setAttribute('datetime', `${time.minutes}m ${time.seconds}s`)
+
+
+
 }
 
-video.addEventListener('loadedmetadata', initializeVideo);
 
-function updateTimeElapsed() {
-  const time = formatTime(Math.round(video.currentTime));
-  timeElapsed.innerText = `${time.minutes}:${time.seconds}`;
-  timeElapsed.setAttribute('datetime', `${time.minutes}m ${time.seconds}s`)
+function setProgress(params) {
+  video.currentTime = (sliderTime.value * video.duration) / 100;
+  
+
 }
+sliderTime.addEventListener('change', setProgress)
+
+
+
 
 video.addEventListener('timeupdate', updateTimeElapsed);
+
+
+const slide = function(slider) {
+    const min = slider.min;
+    const max = slider.max;
+    const value = slider.value;
+    slider.style.background = `linear-gradient(to right, #FF6600 0%, #FF6600 ${(value - min) / (max - min) * 100}%, #9397A3 ${(value - min) / (max - min) * 100}%, #9397A3 100%)`;
+    slider.oninput = function () {
+    this.style.background = `linear-gradient(to right, #FF6600 0%, #FF6600 ${(this.value - this.min) / (this.max - this.min) * 100}%, #9397A3 ${(this.value - this.min) / (this.max - this.min) * 100}%, #9397A3 100%)`;
+};
+};
+
+slide(sliderSound);
 
 // громкость
 const volumeButton = document.getElementById('volume-button');
