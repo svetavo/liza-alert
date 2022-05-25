@@ -1,8 +1,0 @@
-.accordion__icon {
-    width: 10.54px;
-    height: 6.25px;
-}
-
-.accordion__icon_open {
-    transform: rotate(180deg);
-}
