@@ -1,0 +1,5 @@
+.content_visible {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

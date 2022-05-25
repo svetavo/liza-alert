@@ -1,0 +1,19 @@
+.accordion__button {
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    margin: 32px 0 33px 0;
+    text-align: left;
+    background: transparent;
+    appearance: none;
+    border: none;
+    border-radius: 0;
+    padding: 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.accordion:last-of-type .accordion__button:last-of-type {
+    margin-bottom: 0;
+}
+

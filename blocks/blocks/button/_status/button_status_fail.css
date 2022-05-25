@@ -1,0 +1,6 @@
+.button_status_fail:before {
+  content: url(../../../images/reapeat_fail.svg);
+  margin-right: 10px;
+  height: 20px;
+  width: 20px;
+}

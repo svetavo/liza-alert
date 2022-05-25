@@ -1,0 +1,13 @@
+.content__show-result {
+  background: #e6e7eb;
+  border-radius: 16px;
+  padding: 12px 24px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  color: #9397A3;
+}
+
+.content__show-result:hover {
+  cursor: pointer;
+}

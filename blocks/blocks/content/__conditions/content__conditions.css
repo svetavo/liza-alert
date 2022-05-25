@@ -1,0 +1,12 @@
+.content__conditions {
+  margin: 0;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  color: #212329;
+}
+
+.content__conditions:hover {
+  cursor: pointer;
+  border-bottom: 1px solid black;
+}
