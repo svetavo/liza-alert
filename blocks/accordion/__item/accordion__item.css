@@ -3,10 +3,6 @@
     margin-bottom: 16px;
 }
 
-.accordion__item_active {
-    color: #F06000;
-}
-
 .accordion__item:last-of-type {
     margin-bottom: 33px;
 }

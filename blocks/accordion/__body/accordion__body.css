@@ -1,7 +1,3 @@
 .accordion__body {
     display: none;
 }
-
-.accordion__body_open {
-    display: block;
-}
