@@ -63,34 +63,34 @@ function updatePlayButton() {
 playButton.addEventListener('click', updatePlayButton);
 
 
-function updateProgress(params) {
-  sliderTime.value = (video.currentTime / video.duration) * 100;
-  let minutes = Math.floor(video.currentTime / 60);
-  let seconds = Math.floor(video.currentTime % 60)
-  slide(sliderTime);
+// function updateProgress(params) {
+//   sliderTime.value = (video.currentTime / video.duration) * 100;
+//   let minutes = Math.floor(video.currentTime / 60);
+//   let seconds = Math.floor(video.currentTime % 60)
+//   slide(sliderTime);
 
 
 
 
 
-}
+// }
 
 
-function setProgress(params) {
-  video.currentTime = (sliderTime.value * video.duration) / 100;
+// function setProgress(params) {
+//   video.currentTime = (sliderTime.value * video.duration) / 100;
   
 
-}
-sliderTime.addEventListener('change', setProgress)
+// }
+// sliderTime.addEventListener('change', setProgress)
 
 
 
 
-video.addEventListener('timeupdate', updateTimeElapsed);
+// video.addEventListener('timeupdate', updateTimeElapsed);
 
 
 
-slide(sliderSound);
+// slide(sliderSound);
 
 // громкость
 const volumeButton = document.getElementById('volume-button');
