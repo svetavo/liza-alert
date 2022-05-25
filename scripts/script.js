@@ -63,43 +63,43 @@ function updatePlayButton() {
 playButton.addEventListener('click', updatePlayButton);
 
 
-function updateProgress(params) {
-  sliderTime.value = (video.currentTime / video.duration) * 100;
-  let minutes = Math.floor(video.currentTime / 60);
-  let seconds = Math.floor(video.currentTime % 60)
-  slide(sliderTime);
+// function updateProgress(params) {
+//   sliderTime.value = (video.currentTime / video.duration) * 100;
+//   let minutes = Math.floor(video.currentTime / 60);
+//   let seconds = Math.floor(video.currentTime % 60)
+//   slide(sliderTime);
 
 
 
 
 
-}
+// }
 
 
-function setProgress(params) {
-  video.currentTime = (sliderTime.value * video.duration) / 100;
+// function setProgress(params) {
+//   video.currentTime = (sliderTime.value * video.duration) / 100;
   
 
-}
-sliderTime.addEventListener('change', setProgress)
+// }
+// sliderTime.addEventListener('change', setProgress)
 
 
 
 
-video.addEventListener('timeupdate', updateTimeElapsed);
+// video.addEventListener('timeupdate', updateTimeElapsed);
 
 
-const slide = function(slider) {
-    const min = slider.min;
-    const max = slider.max;
-    const value = slider.value;
-    slider.style.background = `linear-gradient(to right, #FF6600 0%, #FF6600 ${(value - min) / (max - min) * 100}%, #9397A3 ${(value - min) / (max - min) * 100}%, #9397A3 100%)`;
-    slider.oninput = function () {
-    this.style.background = `linear-gradient(to right, #FF6600 0%, #FF6600 ${(this.value - this.min) / (this.max - this.min) * 100}%, #9397A3 ${(this.value - this.min) / (this.max - this.min) * 100}%, #9397A3 100%)`;
-};
-};
+// const slide = function(slider) {
+//     const min = slider.min;
+//     const max = slider.max;
+//     const value = slider.value;
+//     slider.style.background = `linear-gradient(to right, #FF6600 0%, #FF6600 ${(value - min) / (max - min) * 100}%, #9397A3 ${(value - min) / (max - min) * 100}%, #9397A3 100%)`;
+//     slider.oninput = function () {
+//     this.style.background = `linear-gradient(to right, #FF6600 0%, #FF6600 ${(this.value - this.min) / (this.max - this.min) * 100}%, #9397A3 ${(this.value - this.min) / (this.max - this.min) * 100}%, #9397A3 100%)`;
+// };
+// };
 
-slide(sliderSound);
+// slide(sliderSound);
 
 // громкость
 const volumeButton = document.getElementById('volume-button');
