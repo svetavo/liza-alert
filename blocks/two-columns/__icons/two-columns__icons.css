@@ -1,7 +1,0 @@
-.two-columns__icons {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    justify-content: space-between;
-    margin-right: 10px;
-}
