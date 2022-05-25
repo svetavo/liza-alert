@@ -1,8 +1,0 @@
-.content__answer-list {
-  padding: 0;
-  margin: 16px 0 0;
-  list-style: none;
-  display: flex;
-  gap: 16px;
-  flex-direction: column;
-}
