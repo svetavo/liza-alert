@@ -1,4 +1,4 @@
-.personal-info__item_photo::after {
+.personal-info__item_type_photo::after {
 	background-image: url(../../../../images/profile_attach-icon.svg);
 	cursor: default;
 }

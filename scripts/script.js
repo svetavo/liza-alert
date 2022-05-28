@@ -1,6 +1,6 @@
-const sliderTime = document.querySelector('.video__range_time');
-const sliderSound = document.querySelector('.video__range_sound');
-const fullScreenBtn = document.querySelector('.video__button_fullscreen');
+const sliderTime = document.querySelector('.video__range_type_time');
+const sliderSound = document.querySelector('.video__range_type_sound');
+const fullScreenBtn = document.querySelector('.video__button_type_fullscreen');
 const playButton = document.getElementById('play');
 const video = document.querySelector('video');
 const playbackIcons = document.querySelectorAll('.video__icon use');

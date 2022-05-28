@@ -6,3 +6,10 @@
 	overflow: hidden;
 	transition: max-height 0.2s;
 }
+
+.aside__filter-block_active .aside__filter-items {
+	max-height: 100vh;
+	padding-top: 32px;
+	padding-left: 0;
+	opacity: 1;
+}

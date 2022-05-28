@@ -52,11 +52,11 @@
 @import url(../blocks/video/__icon/video__icon.css);
 @import url(../blocks/video/__icon/_hidden/video__icon_hidden.css);
 @import url(../blocks/video/__button/video__button.css);
-@import url(../blocks/video/__button/_sound/video__button_sound.css);
-@import url(../blocks/video/__button/_fullscreen/video__button_fullscreen.css);
+@import url(../blocks/video/__volume-button/video__volume-button.css);
+@import url(../blocks/video/__button/_type/_fullscreen/video__button_type_fullscreen.css);
 @import url(../blocks/video/__range/video__range.css);
-@import url(../blocks/video/__range/_time/video__range_time.css);
-@import url(../blocks/video/__range/_sound/video__range_sound.css);
+@import url(../blocks/video/__range/_type/video__range_type_time.css);
+@import url(../blocks/video/__range/_type/video__range_type_sound.css);
 @import url(../blocks/video/__time-count/video__time-count.css);
 @import url(../blocks/video/__icon-volume/video__icon-volume.css);
 @import url(../blocks/video/__icon-volume/_hidden/video__icon-volume_hidden.css);

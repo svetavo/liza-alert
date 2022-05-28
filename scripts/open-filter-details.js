@@ -130,20 +130,20 @@ function showCard() {
 	});
 
 	cardBox.forEach(e => {
-		e.classList.remove("card-list__base_shattered");
+		e.classList.remove("card-list__base-shattered");
 
 		if (filterLevel.length == 0 && filterStatus.length == 0) {
-			e.classList.remove("card-list__base_shattered");
+			e.classList.remove("card-list__base-shattered");
 		} else if (
 			filterLevel.includes(e.dataset.card) == false &&
 			filterLevel.length != 0
 		) {
-			e.classList.add("card-list__base_shattered");
+			e.classList.add("card-list__base-shattered");
 		} else if (
 			filterStatus.includes(e.dataset.status) == false &&
 			filterStatus.length != 0
 		) {
-			e.classList.add("card-list__base_shattered");
+			e.classList.add("card-list__base-shattered");
 		}
 	});
 }
