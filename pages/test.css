@@ -62,13 +62,13 @@
 @import url(../blocks/button/__show-result/button__show-result.css);
 @import url(../blocks/button/__invisible/button__invisible.css);
 
-@import url(../blocks/two-columns/two-columns.css);
-@import url(../blocks/two-columns/__left/two-columns__left.css);
-@import url(../blocks/two-columns/__right/two-columns__right.css);
-@import url(../blocks/two-columns/__row/two-columns__row.css);
-@import url(../blocks/two-columns/__icon/two-columns__icon.css);
-@import url(../blocks/two-columns/__icons/two-columns__icons.css);
-@import url(../blocks/two-columns/__text-area/two-columns__text-area.css);
+@import url(../blocks/columns/columns.css);
+@import url(../blocks/columns/__icons-area/columns__icons-area.css);
+@import url(../blocks/columns/__text-area/columns__text-area.css);
+@import url(../blocks/columns/__digits/columns__digits.css);
+@import url(../blocks/columns/__icon/columns__icon.css);
+@import url(../blocks/columns/__icons/columns__icons.css);
+@import url(../blocks/columns/__row/columns__row.css);
 
 @import url(../blocks/aside/aside.css);
 @import url(../blocks/aside/__title/aside__title.css);
