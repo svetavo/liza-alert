@@ -6,3 +6,7 @@
 	margin: 0;
 	padding: 0 10px 0 0;
 }
+
+.aside__checkbox-options:checked ~ .aside__checkbox-pseudo {
+	background-image: url(../../../images/checkbox-checked.svg);
+}

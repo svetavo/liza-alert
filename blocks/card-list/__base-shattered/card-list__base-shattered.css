@@ -9,7 +9,7 @@
 	}
 }
 
-.card-list__base_shattered {
+.card-list__base-shattered {
 	opacity: 0;
 	visibility: hidden;
 	animation-name: shatterElement;

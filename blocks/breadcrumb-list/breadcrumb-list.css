@@ -5,11 +5,4 @@
   padding-top: 24px;
   padding-left: 0px;
   padding-bottom: 32px;
-  
-}
-
-.breadcrumb-list .breadcrumb-list__item+.breadcrumb-list__item::before{
-  padding: 9px;
-  color: black;
-  content: url('../../images/arrow.png');
 }

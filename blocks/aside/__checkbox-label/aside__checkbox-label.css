@@ -5,3 +5,7 @@
 	font-style: normal;
 	line-height: 133%;
 }
+
+.aside__checkbox-options:checked ~ .aside__checkbox-label {
+	color: #f06000;
+}
