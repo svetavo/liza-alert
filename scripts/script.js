@@ -3,7 +3,7 @@ const sliderSound = document.querySelector('.video__range_type_sound');
 const fullScreenBtn = document.querySelector('.video__button_type_fullscreen');
 const playButton = document.getElementById('play');
 const video = document.querySelector('video');
-const playbackIcons = document.querySelectorAll('.video__icon use');
+const playbackIcons = document.querySelectorAll('.video__icon svg');
 const timeElapsed = document.getElementById('time-elapsed');
 const duration = document.getElementById('duration');
 const nextBtn = document.querySelector('[name="next-btn"]');
@@ -103,10 +103,10 @@ playButton.addEventListener('click', updatePlayButton);
 
 // громкость
 const volumeButton = document.getElementById('volume-button');
-const volumeIcons = document.querySelectorAll('.video__icon-volume use');
-const volumeMute = document.querySelector('use[href="#volume-mute"]');
-const volumeLow = document.querySelector('use[href="#volume-low"]');
-const volumeHigh = document.querySelector('use[href="#volume-high"]');
+const volumeIcons = document.querySelectorAll('.video__icon-volume svg');
+const volumeMute = document.getElementById('volume-mute');
+const volumeLow = document.getElementById('volume-low');
+const volumeHigh = document.getElementById('volume-high');
 const volume = document.getElementById('volume');
 
 function updateVolume() {
