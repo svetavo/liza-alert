@@ -15,7 +15,6 @@
 
 .card-list__button:hover {
 	cursor: pointer;
-  opacity: 0.5;
 }
 
 @media (max-width: 1320px) {
