@@ -1,0 +1,4 @@
+.accordion__list_open {
+    max-height: 100vh;
+    opacity: 1;
+}
