@@ -74,14 +74,6 @@
 @import url(../blocks/button/__show-result/button__show-result.css);
 @import url(../blocks/button/__invisible/button__invisible.css);
 
-@import url(../blocks/two-columns/two-columns.css);
-@import url(../blocks/two-columns/__left/two-columns__left.css);
-@import url(../blocks/two-columns/__right/two-columns__right.css);
-@import url(../blocks/two-columns/__row/two-columns__row.css);
-@import url(../blocks/two-columns/__icon/two-columns__icon.css);
-@import url(../blocks/two-columns/__icons/two-columns__icons.css);
-@import url(../blocks/two-columns/__text-area/two-columns__text-area.css);
-
 @import url(../blocks/aside/aside.css);
 @import url(../blocks/aside/__title/aside__title.css);
 @import url(../blocks/accordion/accordion.css);

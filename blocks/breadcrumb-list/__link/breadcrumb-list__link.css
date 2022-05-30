@@ -7,4 +7,11 @@
 
 .breadcrumb-list__link:hover {
   opacity: 0.5;
+  cursor: pointer;
+}
+
+.breadcrumb-list .breadcrumb-list__item+.breadcrumb-list__item::before{
+  padding: 9px;
+  color: black;
+  content: url('../../../images/arrow.png');
 }
