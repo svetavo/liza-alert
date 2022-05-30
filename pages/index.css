@@ -67,7 +67,7 @@
 @import url(../blocks/button/_disabled/button_disabled.css);
 @import url(../blocks/button/_color/button_color_orange.css);
 @import url(../blocks/button/_color/button_color_white.css);
-@import url(../blocks/button/_result/button__result.css);
+@import url(../blocks/button/__result/button__result.css);
 @import url(../blocks/button/_status/button_status_fail.css);
 @import url(../blocks/button/_status/button_status_succes.css);
 @import url(../blocks/button/__icon/button__icon.css);
